@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C10AB832871C2FE00440F6B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10AB822871C2FE00440F6B /* Constant.swift */; };
+		0C10AB862871C41200440F6B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10AB852871C41200440F6B /* String+Extension.swift */; };
+		0C17768F286F138700EE0F15 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C17768E286F138700EE0F15 /* WeatherCell.swift */; };
+		0C177692286F456C00EE0F15 /* WeatherServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C177691286F456C00EE0F15 /* WeatherServices.swift */; };
+		0C177695286F4CE400EE0F15 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C177694286F4CE400EE0F15 /* WeatherResponse.swift */; };
+		0C1776972870CCAD00EE0F15 /* AddWatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1776962870CCAD00EE0F15 /* AddWatherViewModel.swift */; };
 		0CB99C992864D4B30003B35D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99C982864D4B30003B35D /* AppDelegate.swift */; };
 		0CB99C9B2864D4B30003B35D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99C9A2864D4B30003B35D /* SceneDelegate.swift */; };
 		0CB99C9D2864D4B30003B35D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB99C9C2864D4B30003B35D /* ViewController.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C10AB822871C2FE00440F6B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0C10AB852871C41200440F6B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		0C17768E286F138700EE0F15 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		0C177691286F456C00EE0F15 /* WeatherServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServices.swift; sourceTree = "<group>"; };
+		0C177694286F4CE400EE0F15 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		0C1776962870CCAD00EE0F15 /* AddWatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWatherViewModel.swift; sourceTree = "<group>"; };
 		0CB99C952864D4B30003B35D /* GoodWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB99C982864D4B30003B35D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CB99C9A2864D4B30003B35D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +61,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C10AB812871C2EC00440F6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0C10AB822871C2FE00440F6B /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0C10AB842871C3F100440F6B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C10AB852871C41200440F6B /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0C17768D286F137300EE0F15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0C17768E286F138700EE0F15 /* WeatherCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0C177690286F455600EE0F15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C177691286F456C00EE0F15 /* WeatherServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0C177693286F471000EE0F15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C177694286F4CE400EE0F15 /* WeatherResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0CB99C8C2864D4B30003B35D = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +120,11 @@
 		0CB99C972864D4B30003B35D /* GoodWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				0C10AB842871C3F100440F6B /* Extension */,
+				0C10AB812871C2EC00440F6B /* Utils */,
+				0C177693286F471000EE0F15 /* Model */,
+				0C177690286F455600EE0F15 /* Services */,
+				0C17768D286F137300EE0F15 /* Cells */,
 				0CB99CAD2864D56C0003B35D /* Controllers */,
 				0CB99CAC2864D55C0003B35D /* ViewModels */,
 				0CB99C982864D4B30003B35D /* AppDelegate.swift */,
@@ -87,6 +144,7 @@
 				0CB99CAE2864D5880003B35D /* WeatherListViewModel.swift */,
 				0CB99CB02864D5990003B35D /* WeatherViewModel.swift */,
 				0CB99CBB2864D6740003B35D /* SettingsViewModel.swift */,
+				0C1776962870CCAD00EE0F15 /* AddWatherViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -173,13 +231,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB99CB12864D5990003B35D /* WeatherViewModel.swift in Sources */,
+				0C177692286F456C00EE0F15 /* WeatherServices.swift in Sources */,
 				0CB99CB62864D5EA0003B35D /* AddWeatherViewController.swift in Sources */,
+				0C17768F286F138700EE0F15 /* WeatherCell.swift in Sources */,
 				0CB99C9D2864D4B30003B35D /* ViewController.swift in Sources */,
 				0CB99CB82864D62C0003B35D /* WeatherListViwController.swift in Sources */,
 				0CB99CAF2864D5880003B35D /* WeatherListViewModel.swift in Sources */,
+				0C10AB832871C2FE00440F6B /* Constant.swift in Sources */,
+				0C1776972870CCAD00EE0F15 /* AddWatherViewModel.swift in Sources */,
+				0C177695286F4CE400EE0F15 /* WeatherResponse.swift in Sources */,
 				0CB99C992864D4B30003B35D /* AppDelegate.swift in Sources */,
 				0CB99C9B2864D4B30003B35D /* SceneDelegate.swift in Sources */,
 				0CB99CBA2864D64E0003B35D /* SettingsViewController.swift in Sources */,
+				0C10AB862871C41200440F6B /* String+Extension.swift in Sources */,
 				0CB99CBC2864D6740003B35D /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
